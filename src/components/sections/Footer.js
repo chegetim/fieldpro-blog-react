@@ -74,6 +74,9 @@ const FooterContainer = styled.div`
   margin: 6em 0 0 0;
   padding: 3em 0 2em 0;
   background-color: #f5f5f5;
+  @media (max-width: 32em) {
+    overflow-x: hidden;
+  }
 `
 const FooterGroup = styled.div`
   display: grid;
@@ -82,11 +85,20 @@ const FooterGroup = styled.div`
   max-width: 72em;
   margin: 0 0 0 6em;
   padding: 0;
+  @media (max-width: 32em) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 24em;
+    margin: 0 3em;
+  }
 `
 const FooterLogo = styled.div`
+  width: 10em;
   margin: 0.2em 4em 0 0;
   padding: 0;
-  width: 10em;
+  @media (max-width: 32em) {
+    margin: 0.2em 10em -2em -0.2em;
+  }
 `
 const LinkGroup = styled.div`
   display: grid;
@@ -109,6 +121,10 @@ const LinkGroup = styled.div`
     margin: 0;
     padding: 0;
   }
+  @media (max-width: 32em) {
+    width: 0;
+    margin: 0 -3em -1em 0;
+  }
 `
 const Copyright = styled.div`
   margin: 2em 0 0 2.5em;
@@ -119,5 +135,9 @@ const Copyright = styled.div`
     color: #2c2c2c;
     margin: 0;
     padding: 0;
+  }
+  @media (max-width: 32em) {
+    width: 20em;
+    margin: 3em 0 0 -4em;
   }
 `
